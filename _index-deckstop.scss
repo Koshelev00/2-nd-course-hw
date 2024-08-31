@@ -1,11 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-// .center {
-//     padding-left: calc(50% - 600px);
-//     padding-right: calc(50% - 600px);
-// }
+$color-black:  rgb(32, 32, 39);
+$color-white: rgb(255, 255, 255);
 .top {
     background-color: rgb(225, 255, 143);
     width: 1440px;
@@ -13,8 +7,7 @@
     overflow: hidden;
 
     &__title {
-        color: rgb(32, 32, 39);
-        font-family: Montserrat;
+        color: $color-black;
         font-size: 64px;
         font-weight: 700;
         line-height: 78px;
@@ -25,67 +18,66 @@
     }
 
     &__description {
-        color: rgb(32, 32, 39);
-        font-family: Montserrat;
+        color: $color-black;
         font-size: 24px;
         font-weight: 400;
         line-height: 32px;
-        letter-spacing: 0px;
         text-align: left;
         padding-left: 120px;
-        padding-bottom: 28px;
+        padding-bottom: 48px;
     }
 
 }
-.top-svg1 {
-    position: absolute;
-    top: -321px;
-    right: -459px;
+.dedicated {
+    font-weight: bold;
 }
-.star_2 {
+.top__star-1 {
+    position: absolute;
+    top: -334px;
+    right: -488px;
+}
+.top__star-2 {
    position: absolute;
    top: 94px;
    left: 63px;
 }
 
-.star_3 {
+.top__star-3 {
     position: absolute;
     top: 69px;
     left: 156px;
 }
-.star_4 {
+.top__star-4 {
     position: absolute;
     bottom: 149px;
     left: 1013px;
 }
-.star_5 {
+.top__star-5 {
     position: absolute;
     bottom: 225px;
     left: 948px;
 }
 
-.drive {
+.drive-btn {
     width: 247px;
     height: 66px;
     box-sizing: border-box;
-    border: 1px solid rgb(32, 32, 39);
     border-radius: 60px;
-    background: rgb(32, 32, 39);
-    color: rgb(255, 255, 255);
-    font-family: Montserrat;
+    background: $color-black;
+    color: $color-white;
     font-size: 24px;
     font-weight: 600;
     line-height: 141.69%;
-    letter-spacing: 0%;
     text-align: center;
     font-family: inherit;
-    margin: 120px;
-    margin-bottom: 156px;
+    margin-bottom: 154px;
+    margin-left: 119px;
+    
 
 }
 
 .animation {
-    width: 3220px;
+    // width: 3220px;
     height: 90px;
     display: flex;
     flex-direction: column;
@@ -97,6 +89,7 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(50px);
     background: rgb(188, 236, 48);
+    overflow: hidden;
 }
 
 .animation-box {
@@ -111,13 +104,257 @@
     align-items: center;
 
     &__game {
-        color: rgb(32, 32, 39);
-        font-family: Montserrat;
+       color: $color-black;
         font-size: 30px;
         font-weight: 700;
         line-height: 110%;
-        letter-spacing: 4%;
-        text-align: left;
+        letter-spacing: 1.1px;
+        text-align:  left;
         text-transform: uppercase;
     }
+}
+
+.about-box {
+    width: 1440px;
+    background-color: $color-black;
+    position: relative;
+    overflow: hidden;
+
+    &__star-1 {
+        position: absolute;
+        top: 113px;
+        right: -109px;
+    }
+    
+    
+    &__star-2 {
+        position: absolute;
+        top: 827px;
+        left: 42px;
+    }
+    &__star-3 {
+        position: absolute;
+        top: 773px;
+        left: 25px;
+    }
+}
+.about-games {
+    width: 1201px;
+}
+.about-description {
+    
+    &__title {
+        color: $color-white;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        text-align: left;
+        padding-top: 94px;
+        margin-bottom: 26px;
+        margin-left: 119px;
+    }
+    &__text {
+        color: $color-white;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        margin-left: 119px;
+        margin-bottom: 72px;
+    }
+}
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 119px;
+    margin-bottom: 50px;
+    gap: 32px;
+    box-sizing: border-box;
+    width: 1201px;
+    z-index: 1;
+    
+}
+.card-box {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+
+    &__link {
+        text-decoration: none;
+        z-index: 1;
+    }
+}
+.card {
+    border-radius: 30px;
+    box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+    background: $color-white;
+    width: 378px;
+    align-items: start;
+}
+.card:hover {
+    transform: scale(1.08);
+}
+
+.description-box {
+    width: 378px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 32px 32px 36px 32px;
+}
+.description-card {
+    width: 314px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 0px;
+
+    &__title {
+        color: $color-black;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        text-align: left;
+    }
+}
+.number-box {
+    width: 108px;
+    height: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 16px 10px 16px;
+    border-radius: 52.58px;
+    background: rgb(247, 247, 247);
+    &__text {
+        color: $color-black;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+        text-align: left;
+    }
+}
+
+.mini-games {
+    width: 1440px;
+    background: $color-black;
+    padding-left: 119px;
+    box-sizing: border-box;
+    position: relative;
+    &__title {
+        color: $color-white;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        text-align: left;
+        padding-top: 46px;
+        margin-bottom: 72px;
+    }
+    &__star-1 {
+        position: absolute;
+        top: 130px;
+        right: 48px;
+    }
+    &__star-2 {
+        position: absolute;
+        bottom: 67px;
+        right: 52px;
+    }
+    &__star-3 {
+        position: absolute;
+        top: 96px;
+        right: 126px;
+    }
+    &__star-4 {
+        position: absolute;
+        bottom: 48px;
+        right: 154px;
+    }
+}
+
+.box-game {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding-bottom: 143px;
+ 
+    
+
+}
+.card-game {
+    border-radius: 30px;
+    box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+    background: $color-white;
+    display: flex;
+    
+}
+
+.left-box {
+    width: 600px;
+    padding: 48px;
+
+    &__title {
+        color: $color-black;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        text-align: left;
+    }
+    &__text {
+        color: $color-black;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        margin-top: 24px;
+        margin-bottom: 36px;
+    }
+ 
+}
+.btn-play {
+    width: 247px;
+    height: 66px;
+    border-radius: 60px;
+    background: $color-black;
+    color: $color-white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    text-align: center;
+    font-family: inherit;
+}
+.footer {
+    width: 1441px;
+    background: rgb(189, 237, 53);
+    &__title {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        text-align: center;
+        padding-top: 61px;
+        padding-bottom: 60px;
+    }
+}
+.btn {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.btn:hover {
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 60px;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    text-align: center;
+    background: $color-white;
+    
+
 }
