@@ -1,8 +1,12 @@
 $color-black:  rgb(32, 32, 39);
 $color-white: rgb(255, 255, 255);
 .top {
-    background-color: rgb(225, 255, 143);
-    width: 1440px;
+    height: 800px;
+    background-image: url(img/background_top.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1440px;
     position: relative;
     overflow: hidden;
 
@@ -13,7 +17,7 @@ $color-white: rgb(255, 255, 255);
         line-height: 78px;
         text-align: left;
         padding-top: 196px;
-        padding-left: 120px;
+        // padding-left: 120px;
         padding-bottom: 24px;
     }
 
@@ -23,7 +27,7 @@ $color-white: rgb(255, 255, 255);
         font-weight: 400;
         line-height: 32px;
         text-align: left;
-        padding-left: 120px;
+        // padding-left: 120px;
         padding-bottom: 48px;
     }
 
@@ -31,32 +35,32 @@ $color-white: rgb(255, 255, 255);
 .dedicated {
     font-weight: bold;
 }
-.top__star-1 {
-    position: absolute;
-    top: -334px;
-    right: -488px;
-}
-.top__star-2 {
-   position: absolute;
-   top: 94px;
-   left: 63px;
-}
+// .top__star-1 {
+//     position: absolute;
+//     top: -334px;
+//     right: -488px;
+// }
+// .top__star-2 {
+//    position: absolute;
+//    top: 94px;
+//    left: 63px;
+// }
 
-.top__star-3 {
-    position: absolute;
-    top: 69px;
-    left: 156px;
-}
-.top__star-4 {
-    position: absolute;
-    bottom: 149px;
-    left: 1013px;
-}
-.top__star-5 {
-    position: absolute;
-    bottom: 225px;
-    left: 948px;
-}
+// .top__star-3 {
+//     position: absolute;
+//     top: 69px;
+//     left: 156px;
+// }
+// .top__star-4 {
+//     position: absolute;
+//     bottom: 149px;
+//     left: 1013px;
+// }
+// .top__star-5 {
+//     position: absolute;
+//     bottom: 225px;
+//     left: 948px;
+// }
 
 .drive-btn {
     width: 247px;
@@ -71,13 +75,13 @@ $color-white: rgb(255, 255, 255);
     text-align: center;
     font-family: inherit;
     margin-bottom: 154px;
-    margin-left: 119px;
+    // margin-left: 119px;
     
 
 }
 
 .animation {
-    // width: 3220px;
+    max-width: 3220px;
     height: 90px;
     display: flex;
     flex-direction: column;
@@ -115,31 +119,35 @@ $color-white: rgb(255, 255, 255);
 }
 
 .about-box {
-    width: 1440px;
-    background-color: $color-black;
+    // width: 1440px;
+    height: 1470px;
+    background-image: url(img/background_about.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     overflow: hidden;
 
-    &__star-1 {
-        position: absolute;
-        top: 113px;
-        right: -109px;
-    }
+    // &__star-1 {
+    //     position: absolute;
+    //     top: 113px;
+    //     right: -109px;
+    // }
     
     
-    &__star-2 {
-        position: absolute;
-        top: 827px;
-        left: 42px;
-    }
-    &__star-3 {
-        position: absolute;
-        top: 773px;
-        left: 25px;
-    }
+    // &__star-2 {
+    //     position: absolute;
+    //     top: 827px;
+    //     left: 42px;
+    // }
+    // &__star-3 {
+    //     position: absolute;
+    //     top: 773px;
+    //     left: 25px;
+    // }
 }
 .about-games {
-    width: 1201px;
+    // width: 1201px;
 }
 .about-description {
     
@@ -151,7 +159,7 @@ $color-white: rgb(255, 255, 255);
         text-align: left;
         padding-top: 94px;
         margin-bottom: 26px;
-        margin-left: 119px;
+        // margin-left: 119px;
     }
     &__text {
         color: $color-white;
@@ -159,14 +167,14 @@ $color-white: rgb(255, 255, 255);
         font-weight: 400;
         line-height: 32px;
         text-align: left;
-        margin-left: 119px;
+        // margin-left: 119px;
         margin-bottom: 72px;
     }
 }
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 119px;
+    // margin-left: 119px;
     margin-bottom: 50px;
     gap: 32px;
     box-sizing: border-box;
@@ -188,15 +196,16 @@ $color-white: rgb(255, 255, 255);
     border-radius: 30px;
     box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
     background: $color-white;
-    width: 378px;
+    max-width: 378px;
     align-items: start;
+    flex-wrap: wrap;
 }
 .card:hover {
     transform: scale(1.08);
 }
 
 .description-box {
-    width: 378px;
+    max-width: 378px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -204,7 +213,7 @@ $color-white: rgb(255, 255, 255);
     padding: 32px 32px 36px 32px;
 }
 .description-card {
-    width: 314px;
+    max-width: 314px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -240,9 +249,13 @@ $color-white: rgb(255, 255, 255);
 }
 
 .mini-games {
-    width: 1440px;
-    background: $color-black;
-    padding-left: 119px;
+    // width: 1440px;
+    background-image: url(img/background_games.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+    // padding-left: 119px;
     box-sizing: border-box;
     position: relative;
     &__title {
@@ -254,30 +267,30 @@ $color-white: rgb(255, 255, 255);
         padding-top: 46px;
         margin-bottom: 72px;
     }
-    &__star-1 {
-        position: absolute;
-        top: 130px;
-        right: 48px;
-    }
-    &__star-2 {
-        position: absolute;
-        bottom: 67px;
-        right: 52px;
-    }
-    &__star-3 {
-        position: absolute;
-        top: 96px;
-        right: 126px;
-    }
-    &__star-4 {
-        position: absolute;
-        bottom: 48px;
-        right: 154px;
-    }
+    // &__star-1 {
+    //     position: absolute;
+    //     top: 130px;
+    //     right: 48px;
+    // }
+    // &__star-2 {
+    //     position: absolute;
+    //     bottom: 67px;
+    //     right: 52px;
+    // }
+    // &__star-3 {
+    //     position: absolute;
+    //     top: 96px;
+    //     right: 126px;
+    // }
+    // &__star-4 {
+    //     position: absolute;
+    //     bottom: 48px;
+    //     right: 154px;
+    // }
 }
 
 .box-game {
-    width: 1200px;
+    // max-width: 1200px;
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -291,11 +304,14 @@ $color-white: rgb(255, 255, 255);
     box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
     background: $color-white;
     display: flex;
+    // max-width: max-content;
+    // max-height: max-content;
+    flex-wrap: wrap;
     
 }
 
 .left-box {
-    width: 600px;
+    // max-width: 600px;
     padding: 48px;
 
     &__title {
@@ -316,6 +332,9 @@ $color-white: rgb(255, 255, 255);
     }
  
 }
+.right-box {
+    // max-width: 600px;
+}
 .btn-play {
     width: 247px;
     height: 66px;
@@ -329,7 +348,8 @@ $color-white: rgb(255, 255, 255);
     font-family: inherit;
 }
 .footer {
-    width: 1441px;
+    // width: 1441px;
+    height: 150px;
     background: rgb(189, 237, 53);
     &__title {
         color: rgb(0, 0, 0);

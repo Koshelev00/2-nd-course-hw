@@ -7,9 +7,18 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
 .top {
-  background-color: rgb(225, 255, 143);
-  width: 1440px;
+  height: 800px;
+  background-image: url(img/background_top.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1440px;
   position: relative;
   overflow: hidden;
 }
@@ -20,7 +29,6 @@ body {
   line-height: 78px;
   text-align: left;
   padding-top: 196px;
-  padding-left: 120px;
   padding-bottom: 24px;
 }
 .top__description {
@@ -29,42 +37,11 @@ body {
   font-weight: 400;
   line-height: 32px;
   text-align: left;
-  padding-left: 120px;
   padding-bottom: 48px;
 }
 
 .dedicated {
   font-weight: bold;
-}
-
-.top__star-1 {
-  position: absolute;
-  top: -334px;
-  right: -488px;
-}
-
-.top__star-2 {
-  position: absolute;
-  top: 94px;
-  left: 63px;
-}
-
-.top__star-3 {
-  position: absolute;
-  top: 69px;
-  left: 156px;
-}
-
-.top__star-4 {
-  position: absolute;
-  bottom: 149px;
-  left: 1013px;
-}
-
-.top__star-5 {
-  position: absolute;
-  bottom: 225px;
-  left: 948px;
 }
 
 .drive-btn {
@@ -80,10 +57,10 @@ body {
   text-align: center;
   font-family: inherit;
   margin-bottom: 154px;
-  margin-left: 119px;
 }
 
 .animation {
+  max-width: 3220px;
   height: 90px;
   display: flex;
   flex-direction: column;
@@ -121,29 +98,13 @@ body {
 }
 
 .about-box {
-  width: 1440px;
-  background-color: rgb(32, 32, 39);
+  height: 1470px;
+  background-image: url(img/background_about.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   overflow: hidden;
-}
-.about-box__star-1 {
-  position: absolute;
-  top: 113px;
-  right: -109px;
-}
-.about-box__star-2 {
-  position: absolute;
-  top: 827px;
-  left: 42px;
-}
-.about-box__star-3 {
-  position: absolute;
-  top: 773px;
-  left: 25px;
-}
-
-.about-games {
-  width: 1201px;
 }
 
 .about-description__title {
@@ -154,7 +115,6 @@ body {
   text-align: left;
   padding-top: 94px;
   margin-bottom: 26px;
-  margin-left: 119px;
 }
 .about-description__text {
   color: rgb(255, 255, 255);
@@ -162,14 +122,12 @@ body {
   font-weight: 400;
   line-height: 32px;
   text-align: left;
-  margin-left: 119px;
   margin-bottom: 72px;
 }
 
 .about-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-left: 119px;
   margin-bottom: 50px;
   gap: 32px;
   box-sizing: border-box;
@@ -191,8 +149,9 @@ body {
   border-radius: 30px;
   box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
   background: rgb(255, 255, 255);
-  width: 378px;
+  max-width: 378px;
   align-items: start;
+  flex-wrap: wrap;
 }
 
 .card:hover {
@@ -200,7 +159,7 @@ body {
 }
 
 .description-box {
-  width: 378px;
+  max-width: 378px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -209,7 +168,7 @@ body {
 }
 
 .description-card {
-  width: 314px;
+  max-width: 314px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -245,9 +204,11 @@ body {
 }
 
 .mini-games {
-  width: 1440px;
-  background: rgb(32, 32, 39);
-  padding-left: 119px;
+  background-image: url(img/background_games.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
   box-sizing: border-box;
   position: relative;
 }
@@ -260,29 +221,8 @@ body {
   padding-top: 46px;
   margin-bottom: 72px;
 }
-.mini-games__star-1 {
-  position: absolute;
-  top: 130px;
-  right: 48px;
-}
-.mini-games__star-2 {
-  position: absolute;
-  bottom: 67px;
-  right: 52px;
-}
-.mini-games__star-3 {
-  position: absolute;
-  top: 96px;
-  right: 126px;
-}
-.mini-games__star-4 {
-  position: absolute;
-  bottom: 48px;
-  right: 154px;
-}
 
 .box-game {
-  width: 1200px;
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -294,10 +234,10 @@ body {
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
   background: rgb(255, 255, 255);
   display: flex;
+  flex-wrap: wrap;
 }
 
 .left-box {
-  width: 600px;
   padding: 48px;
 }
 .left-box__title {
@@ -331,7 +271,7 @@ body {
 }
 
 .footer {
-  width: 1441px;
+  height: 150px;
   background: rgb(189, 237, 53);
 }
 .footer__title {
