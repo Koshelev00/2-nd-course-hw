@@ -13,7 +13,6 @@ body {
 }
 
 .top {
-  height: 800px;
   background-image: url(img/background_top.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -98,7 +97,6 @@ body {
 }
 
 .about-box {
-  height: 1470px;
   background-image: url(img/background_about.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -271,7 +269,6 @@ body {
 }
 
 .footer {
-  height: 150px;
   background: rgb(189, 237, 53);
 }
 .footer__title {
