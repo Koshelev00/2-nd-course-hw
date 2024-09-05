@@ -105,6 +105,7 @@ body {
   padding-top: 94px;
   margin-bottom: 26px;
 }
+
 .about-description__text {
   color: rgb(255, 255, 255);
   font-size: 24px;
@@ -120,7 +121,7 @@ body {
   margin-bottom: 50px;
   gap: 32px;
   box-sizing: border-box;
-  width: 1201px;
+  max-width: 1201px;
   z-index: 1;
 }
 
@@ -230,11 +231,11 @@ body {
   max-width: 1200px;
 }
 
-.forward {
+.card-game_forward {
   flex-wrap: wrap;
 }
 
-.revers {
+.card-game_revers {
   flex-wrap: wrap-reverse;
 }
 
@@ -310,13 +311,7 @@ body {
   background: rgb(255, 255, 255);
 }
 
-@media (max-width: 1024px) {
-  .center {
-    padding-left: calc(50% - 496px);
-    padding-right: calc(50% - 496px);
-  }
-}
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .center {
     padding-left: calc(50% - 368px);
     padding-right: calc(50% - 368px);
@@ -415,5 +410,20 @@ body {
     line-height: 20px;
     letter-spacing: 0px;
     text-align: center;
+  }
+}
+@media (max-width: 1199px) {
+  .center {
+    padding-left: calc(50% - 284px);
+    padding-right: calc(50% - 284px);
+  }
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-game {
+    max-width: 600px;
   }
 }/*# sourceMappingURL=style.css.map */

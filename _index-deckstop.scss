@@ -1,5 +1,6 @@
 $color-black:  rgb(32, 32, 39);
 $color-white: rgb(255, 255, 255);
+
 .top {
     position: relative;
     background-image: url(img/background_top.png);
@@ -33,32 +34,6 @@ $color-white: rgb(255, 255, 255);
 .dedicated {
     font-weight: bold;
 }
-// .top__star-1 {
-//     position: absolute;
-//     top: -334px;
-//     right: -488px;
-// }
-// .top__star-2 {
-//    position: absolute;
-//    top: 94px;
-//    left: 63px;
-// }
-
-// .top__star-3 {
-//     position: absolute;
-//     top: 69px;
-//     left: 156px;
-// }
-// .top__star-4 {
-//     position: absolute;
-//     bottom: 149px;
-//     left: 1013px;
-// }
-// .top__star-5 {
-//     position: absolute;
-//     bottom: 225px;
-//     left: 948px;
-// }
 
 .drive-btn {
     width: 247px;
@@ -73,9 +48,6 @@ $color-white: rgb(255, 255, 255);
     text-align: center;
     font-family: inherit;
     margin-bottom: 154px;
-    // margin-left: 119px;
-    
-
 }
 
 .animation {
@@ -83,19 +55,6 @@ $color-white: rgb(255, 255, 255);
     bottom: 0;
     height: 90px;
     left: -1%;
-    // max-width: 3220px;
-    // height: 90px;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: flex-start;
-    // align-items: flex-start;
-    // gap: 10px;
-    // padding: 27px 49px 27px 19px;
-    // box-sizing: border-box;
-    // border: 1px solid rgba(255, 255, 255, 0.2);
-    // backdrop-filter: blur(50px);
-    // background: rgb(188, 236, 48);
-    // overflow: hidden;
 }
 
 .animation-box {
@@ -121,62 +80,40 @@ $color-white: rgb(255, 255, 255);
 }
 
 .about-box {
-
     background-image: url(img/background_about.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     overflow: hidden;
-
-    // &__star-1 {
-    //     position: absolute;
-    //     top: 113px;
-    //     right: -109px;
-    // }
+} 
     
-    
-    // &__star-2 {
-    //     position: absolute;
-    //     top: 827px;
-    //     left: 42px;
-    // }
-    // &__star-3 {
-    //     position: absolute;
-    //     top: 773px;
-    //     left: 25px;
-    // }
+.about-description__title {
+    color: $color-white;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    text-align: left;
+    padding-top: 94px;
+    margin-bottom: 26px;
 }
 
-.about-description {
-    
-    &__title {
-        color: $color-white;
-        font-size: 64px;
-        font-weight: 700;
-        line-height: 78px;
-        text-align: left;
-        padding-top: 94px;
-        margin-bottom: 26px;
-        // margin-left: 119px;
-    }
-    &__text {
-        color: $color-white;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 32px;
-        text-align: left;
-        // margin-left: 119px;
-        margin-bottom: 72px;
-    }
+.about-description__text {
+    color: $color-white;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 72px;
 }
+
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 50px;
     gap: 32px;
     box-sizing: border-box;
-    width: 1201px;
+    max-width: 1201px;
     z-index: 1;
     
 }
@@ -190,6 +127,7 @@ $color-white: rgb(255, 255, 255);
         z-index: 1;
     }
 }
+
 .card {
     border-radius: 30px;
     box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
@@ -198,6 +136,7 @@ $color-white: rgb(255, 255, 255);
     align-items: start;
     flex-wrap: wrap;
 }
+
 .card:hover {
     transform: scale(1.08);
 }
@@ -210,6 +149,7 @@ $color-white: rgb(255, 255, 255);
     align-items: flex-start;
     padding: 32px 32px 36px 32px;
 }
+
 .description-card {
     max-width: 314px;
     display: flex;
@@ -227,6 +167,7 @@ $color-white: rgb(255, 255, 255);
         text-align: left;
     }
 }
+
 .number-box {
     width: 108px;
     height: 14px;
@@ -263,26 +204,6 @@ $color-white: rgb(255, 255, 255);
         padding-top: 46px;
         margin-bottom: 72px;
     }
-    // &__star-1 {
-    //     position: absolute;
-    //     top: 130px;
-    //     right: 48px;
-    // }
-    // &__star-2 {
-    //     position: absolute;
-    //     bottom: 67px;
-    //     right: 52px;
-    // }
-    // &__star-3 {
-    //     position: absolute;
-    //     top: 96px;
-    //     right: 126px;
-    // }
-    // &__star-4 {
-    //     position: absolute;
-    //     bottom: 48px;
-    //     right: 154px;
-    // }
 }
 
 .box-game {
@@ -291,10 +212,8 @@ $color-white: rgb(255, 255, 255);
     flex-direction: column;
     gap: 28px;
     padding-bottom: 143px;
- 
-    
-
 }
+
 .card-game {
     border-radius: 30px;
     box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
@@ -302,13 +221,14 @@ $color-white: rgb(255, 255, 255);
     display: flex;
     max-width: max-content;
     max-height: max-content;
-    max-width: 1200px;
-    
+    max-width: 1200px;    
 }
-.forward {
+
+.card-game_forward {
     flex-wrap: wrap;
 }
-.revers {
+
+.card-game_revers {
     flex-wrap: wrap-reverse;
 }
 
@@ -332,16 +252,16 @@ $color-white: rgb(255, 255, 255);
         text-align: left;
         margin-top: 24px;
         margin-bottom: 36px;
-    }
- 
+    } 
 }
+
 .right-box {
     max-width: 600px;
-
     &__img {
         width: 100%;
     }
 }
+
 .btn-play {
     width: 247px;
     height: 66px;
@@ -354,6 +274,7 @@ $color-white: rgb(255, 255, 255);
     text-align: center;
     font-family: inherit;
 }
+
 .footer {
     background: rgb(189, 237, 53);
     &__title {
@@ -366,10 +287,12 @@ $color-white: rgb(255, 255, 255);
         padding-bottom: 60px;
     }
 }
+
 .btn {
     cursor: pointer;
     transition: all 0.5s;
 }
+
 .btn:hover {
     box-sizing: border-box;
     border: 1px solid rgb(0, 0, 0);
@@ -380,6 +303,4 @@ $color-white: rgb(255, 255, 255);
     line-height: 141.69%;
     text-align: center;
     background: $color-white;
-    
-
 }
