@@ -1,7 +1,7 @@
 $color-black:  rgb(32, 32, 39);
 $color-white: rgb(255, 255, 255);
 .top {
-    // height: 800px;
+    position: relative;
     background-image: url(img/background_top.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -17,7 +17,6 @@ $color-white: rgb(255, 255, 255);
         line-height: 78px;
         text-align: left;
         padding-top: 196px;
-        // padding-left: 120px;
         padding-bottom: 24px;
     }
 
@@ -27,7 +26,6 @@ $color-white: rgb(255, 255, 255);
         font-weight: 400;
         line-height: 32px;
         text-align: left;
-        // padding-left: 120px;
         padding-bottom: 48px;
     }
 
@@ -81,19 +79,23 @@ $color-white: rgb(255, 255, 255);
 }
 
 .animation {
-    max-width: 3220px;
+    position: absolute;
+    bottom: 0;
     height: 90px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 27px 49px 27px 19px;
-    box-sizing: border-box;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(50px);
-    background: rgb(188, 236, 48);
-    overflow: hidden;
+    left: -1%;
+    // max-width: 3220px;
+    // height: 90px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-start;
+    // align-items: flex-start;
+    // gap: 10px;
+    // padding: 27px 49px 27px 19px;
+    // box-sizing: border-box;
+    // border: 1px solid rgba(255, 255, 255, 0.2);
+    // backdrop-filter: blur(50px);
+    // background: rgb(188, 236, 48);
+    // overflow: hidden;
 }
 
 .animation-box {
@@ -119,8 +121,7 @@ $color-white: rgb(255, 255, 255);
 }
 
 .about-box {
-    // width: 1440px;
-    // height: 1470px;
+
     background-image: url(img/background_about.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -146,9 +147,7 @@ $color-white: rgb(255, 255, 255);
     //     left: 25px;
     // }
 }
-.about-games {
-    // width: 1201px;
-}
+
 .about-description {
     
     &__title {
@@ -174,7 +173,6 @@ $color-white: rgb(255, 255, 255);
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    // margin-left: 119px;
     margin-bottom: 50px;
     gap: 32px;
     box-sizing: border-box;
@@ -249,13 +247,11 @@ $color-white: rgb(255, 255, 255);
 }
 
 .mini-games {
-    // width: 1440px;
     background-image: url(img/background_games.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: none;
-    // padding-left: 119px;
+    
     box-sizing: border-box;
     position: relative;
     &__title {
@@ -290,7 +286,7 @@ $color-white: rgb(255, 255, 255);
 }
 
 .box-game {
-    // max-width: 1200px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -304,15 +300,22 @@ $color-white: rgb(255, 255, 255);
     box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
     background: $color-white;
     display: flex;
-    // max-width: max-content;
-    // max-height: max-content;
-    flex-wrap: wrap;
+    max-width: max-content;
+    max-height: max-content;
+    max-width: 1200px;
     
+}
+.forward {
+    flex-wrap: wrap;
+}
+.revers {
+    flex-wrap: wrap-reverse;
 }
 
 .left-box {
-    // max-width: 600px;
+    width: 600px;
     padding: 48px;
+    box-sizing: border-box;
 
     &__title {
         color: $color-black;
@@ -333,7 +336,11 @@ $color-white: rgb(255, 255, 255);
  
 }
 .right-box {
-    // max-width: 600px;
+    max-width: 600px;
+
+    &__img {
+        width: 100%;
+    }
 }
 .btn-play {
     width: 247px;
@@ -348,8 +355,6 @@ $color-white: rgb(255, 255, 255);
     font-family: inherit;
 }
 .footer {
-    // width: 1441px;
-    // height: 150px;
     background: rgb(189, 237, 53);
     &__title {
         color: rgb(0, 0, 0);
