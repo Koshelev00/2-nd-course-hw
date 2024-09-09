@@ -1,0 +1,18 @@
+@media (max-width: 1199px) {
+   
+    .center {            
+        padding-left: calc(50% - 284px);
+        padding-right: calc(50% - 284px);
+    }
+    
+    .about-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-game {
+        max-width: 600px;
+    }    
+}
