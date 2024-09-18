@@ -1,23 +1,21 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1;
+const inputElement = document.querySelector('#output');
 
-console.log(randomNumber);
-console.log("Я загадал число от 1 до 100. Угадывайте!");
+inputElement.value='Я загадал число от 1 до 100. Угадайте это число!';
 
 
 const userAnswer = document.getElementById('guess');
-console.log(guess.value);
-
 
 function checkGuess() {
     if (userAnswer.value == randomNumber) {
-            console.log(`Вы угадали! Это число ${randomNumber}`);
+        inputElement.value=(`Вы угадали! Это число ${randomNumber}`);
         } else if (userAnswer.value > randomNumber) {
-            console.log(`${userAnswer.value} больше, чем загаданное число`);
+            inputElement.value=(`${userAnswer.value} больше, чем загаданное число`);
         } else {
-            console.log(`${userAnswer.value} меньше, чем загаданное число`);
+            inputElement.value=(`${userAnswer.value} меньше, чем загаданное число`);
         }
 };
-    console.log(userAnswer.value);
-   
-
-
+const callback = () => {
+    inputElement.value = checkGuess();
+    };
+    const button = document.querySelector('#check');
