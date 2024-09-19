@@ -1,7 +1,7 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 const inputElement = document.querySelector('#output');
 
-inputElement.value='Я загадал число от 1 до 100. Угадайте это число!';
+inputElement.value = ('Я загадал число от 1 до 100. Угадайте это число!');
 
 
 const userAnswer = document.getElementById('guess');

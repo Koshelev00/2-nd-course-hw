@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="game-box">
-    <div class="top-game">
-      <h1 class="game-box__title">Угадай число</h1>
-      <img class="top-game__img" src="img/back.svg" alt="back" onclick="window.location.href='index.html'">
-    </div>
-      <input class="game-box__output"  type="text" id="output" readonly/>
-    
+    <div class="game-box center">
+      <div class="top-game">
+        <h1 class="top-game__title">Угадай число</h1>      
+      </div>
+      <div class="output-box">
+        <input class="output-box__output"  type="text" id="output" readonly/>    
+      </div>
       <p class="game-box__text" >Ваше предположение:</p>
-      <input class="game-box__input" type="number" placeholder="Введите число от 0 до 100" id="guess" min="0" max="100" >
-     
+      <div class="input-box">
+        <input class="input-box__input" type="number" placeholder="Введите число от 0 до 100" id="guess" min="0" max="100" >
+      </div>     
       <div class="btn-box">
         <button class="btn-check btn" id="check" onclick="checkGuess()">Проверить</button>
       </div>
-
-      </div>
-      
+    </div>
+    <img class="game-box__img" src="img/back.svg" alt="back" onclick="window.location.href='index.html'">
 
 
     <script src="Guess_the_number.js"></script>
