@@ -23,14 +23,14 @@ console.log(numberCheck(4));
 
     //Exercise-3
 function square(number) {
-    return Math.pow(`${number}`, 2);       
+    return Math.pow(number, 2);       
 }
 console.log(square(8)); 
 
 function square(number) {
-    return Math.pow(`${number}`, 2);
+    return Math.pow(number, 2);
 }
-let math = square(8);
+let math = square(9);
 console.log(math);
 
      //Exercise-4
@@ -62,12 +62,12 @@ function check(a=3, b=5) {
 console.log(check(9, 5));
 
     //Exercise-6
-    number= prompt('Введите число');
 function checkNumber() {
+    number= prompt('Введите число');
     if (isNaN(number)) {
         return 'Переданный параметр не является числом';        
     } else {        
-        let degree = Math.pow(`${number}`, 3);
+        let degree = number ** 3;
         return `${number} в кубе равняется ${degree}`;        
     }
 }
@@ -75,18 +75,18 @@ alert(checkNumber());
 
     //Exercise-7
 const circle1 = {
-    radius: 8,
+    radius:8,
     getArea() {
-        return Math.PI * Math.pow(`${this.radius}`, 2);
+        return Math.PI * this.radius ** 2;
     },
     getPerimeter() {
         return 2 * Math.PI * this.radius;
     }
 }
 const circle2 = {
-    radius: 30,
+    radius: 20,
     getArea() {
-        return Math.PI * Math.pow(`${this.radius}`, 2);
+        return Math.PI * this.radius ** 2;
     },
     getPerimeter() {
         return 2 * Math.PI * this.radius;
