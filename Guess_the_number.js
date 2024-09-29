@@ -25,9 +25,11 @@ function checkGuess() {
         document.querySelector('#output').style.color = '#2cd156';
         } else if (userAnswer.value > randomNumber) {
             inputElement.value=(`${userAnswer.value} больше, чем загаданное число`);
+            document.querySelector('#output').style.color = '#FF0000';
             userAnswer.value = '';
         } else {
             inputElement.value=(`${userAnswer.value} меньше, чем загаданное число`);
+            document.querySelector('#output').style.color = '#FF0000';
             userAnswer.value = '';
         }
 };
