@@ -51,5 +51,6 @@ let a = document.getElementById("guess1").addEventListener("keydown", function (
       inputElement.value = "Ответ верный!";
     } else {
       inputElement.value = "Ошибка!";
+      document.querySelector('#output').style.color = '#FF0000';
     }
 };
