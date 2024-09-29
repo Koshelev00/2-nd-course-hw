@@ -31,7 +31,7 @@ let a = document.getElementById("guess1").addEventListener("keydown", function (
   let example = ("Пример:   " + task); 
   inputElement.value= example; 
   let result = eval(task);
-  console.log(userAnswer.value);  
+  console.log(result);  
   
   const replay =() =>{ 
     task = generateTask();
