@@ -42,5 +42,3 @@ document.getElementById("check").addEventListener("keydown", function (event) {
 const callback = () => {
     inputElement.value = checkGuess();    
 };
-
-
