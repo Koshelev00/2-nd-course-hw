@@ -26,3 +26,12 @@ function rndm() {
 rndm();
 
     //Exercise-6
+function randomArray(max) {
+    const array = [];
+    for (let i = 0; i < max / 2; i++) {
+    array.push(Math.floor(Math.random() * max));
+    }
+    return array;
+    }
+
+    console.log(randomArray(10));
