@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Простая_арифметика</title>
+    
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="game-simpleArithmetic center">
+      <div class="top-game">
+        <h1 class="top-game__title">Простая арифметика</h1>      
+      </div>
+      <div class="output-simpleArithmetic">
+        <input class="output-simpleArithmetic__output"  type="text" id="output" readonly/>    
+      </div>
+      <p class="game-simpleArithmetic__text" >Выполните арифметическое действие</p>
+      <div class="input-simpleArithmetic">
+        <input class="input-simpleArithmetic__input" type="number" placeholder="Введите ответ!" id="guess1" min="0" max="100" >
+      </div>     
+      <div class="btn-box">
+        <button class="btn-check btn" id="check" onclick="checkGuess()">Ответить</button>
+        <button class="btn-replay btn" id="replay" onclick="replay()">Решать далее</button>
+      </div>
+    </div>
+    <img class="game-simpleArithmetic__img" src="img/back.svg" alt="back" onclick="window.location.href='index.html'">
+
+
+    <script src="Simple_arithmetic.js"></script>
+  </body>
+</html>

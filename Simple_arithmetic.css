@@ -1,0 +1,145 @@
+.game-simpleArithmetic {
+  max-width: 1140px;
+  margin: auto;
+  background-color: #a0a0a0;
+  overflow: hidden;
+  background-image: url(img/cover_game-2.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.game-simpleArithmetic__img {
+  position: absolute;
+  left: 4vw;
+  top: 3vw;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.game-simpleArithmetic__text {
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.game-simpleArithmetic__img:hover {
+  opacity: 0.6;
+}
+
+.top-game {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1440px;
+  height: 100%;
+}
+.top-game__title {
+  color: black;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 26px;
+}
+
+.input-simpleArithmetic {
+  width: 400px;
+  margin-bottom: 30px;
+}
+.input-simpleArithmetic__input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: #eee;
+  padding: 15px;
+  font-size: 24px;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px 1px #888;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  caret-color: transparent;
+}
+.input-simpleArithmetic__input:focus {
+  box-shadow: inset 0 0 5px 5px #888;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10vw;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-check {
+  width: 247px;
+  height: 66px;
+  box-sizing: border-box;
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  text-align: center;
+  font-family: inherit;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-replay {
+  width: 247px;
+  height: 66px;
+  box-sizing: border-box;
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  text-align: center;
+  font-family: inherit;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.output-simpleArithmetic {
+  width: 600px;
+  margin-bottom: 30px;
+}
+.output-simpleArithmetic__output {
+  border: none;
+  width: 100%;
+  height: 50px;
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px 1px #888;
+}
+.output-simpleArithmetic__output:focus {
+  outline-width: 0;
+}/*# sourceMappingURL=Simple_arithmetic.css.map */
