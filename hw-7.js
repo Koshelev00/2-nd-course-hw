@@ -35,3 +35,36 @@ function randomArray(max) {
     }
 
     console.log(randomArray(10));
+ 
+    //Exercise-7
+function randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+console.log(randomInt(100, 20));
+
+    //Exercise-8
+let myDate = new Date();
+console.log(myDate);
+
+    //Exercise-9
+    const currentDate = new Date();
+    currentDate.setDate(currentDate.getDate() + 73); 
+    console.log(currentDate);
+
+        //Exercise-10
+function getDateString(date) {
+    const day = date.getDay();
+    console.log(day);
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+          
+    return `Дата: ${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()} — это ${weekdays[day]}. 
+Время: ${hours}:${minutes}:${seconds}`;
+          }
+
+const months = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
+const weekdays = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
+          
+console.log(getDateString(new Date()));
