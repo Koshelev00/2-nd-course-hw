@@ -20,7 +20,7 @@ function generateTask() {
         }
       }
 
-function cllickButton() {
+function game2() {
     let task = generateTask(); 
     let example = ("Пример:   " + task);
     alert(example); 
