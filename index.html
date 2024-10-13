@@ -14,14 +14,13 @@
     <div class="top center">        
         <h1 class="top__title">Добро пожаловать <br> на мой сайт мини-игр</h1>
         <p class="top__description">Тебе предстоит пройти несколько увлекательных игр.<br> Если готов, нажимай <span class="dedicated">«Поехали!»</span> и <span class="dedicated">приступай</span>.</p>
-        <button class="drive-btn btn" onclick="window.location.href='#mini-games'">Поехали!</button>
-       
-        <div class="animation">
-            <picture>
-                <source srcset="img/top-animation-mobile.png" media="(max-width: 768px)">
-                <img class="top__img" src="img/animation.svg" alt="animation">
-              </picture>
-        </div>
+        <button class="drive-btn btn" onclick="window.location.href='#mini-games'">Поехали!</button>      
+    </div>
+    <div class="animation">
+        <picture>
+            <source srcset="img/animation-mobile.svg" media="(max-width: 768px)">
+            <img class="animation-img" src="img/animation.svg" alt="animation">
+          </picture>
     </div>
     <div class="about-box center">
         <div class="about-games">
@@ -142,7 +141,7 @@
                 <div class="left-box">
                     <h3 class="left-box__title">Угадай число</h3>
                     <p class="left-box__text">Попробуй угадать случайное <br>число от 1 до 100.</p>
-                    <button class="btn-play btn" onclick="play() ">Играть!</button>
+                    <button class="btn-play btn" onclick="game1() ">Играть!</button>
                 </div>
                 <div class="right-box">
                     <img class="right-box__img" src="img/cover_game-1.png" alt="cover_game">
@@ -155,7 +154,7 @@
                 <div class="left-box">
                     <h3 class="left-box__title">Простая <br>арифметика</h3>
                     <p class="left-box__text">Попробуй решить простые арифметические задачи.</p>
-                    <button class="btn-play btn" onclick="cllickButton()">Играть!</button>
+                    <button class="btn-play btn" onclick="game2()">Играть!</button>
                 </div>
             </div>
             <div class="card-game card-game_revers" id="flip_text">
@@ -195,7 +194,7 @@
                 <div class="left-box">
                     <h3 class="left-box__title">Генератор <br>случайных <br>цветов</h3>
                     <p class="left-box__text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                    <button class="btn-play btn">Играть!</button>
+                    <button class="btn-play btn" onclick="game6()">Играть!</button>
                 </div>
             </div>
         </div>      
@@ -208,7 +207,7 @@
     <script src="game3.js"></script>
     <script src="game4.js"></script>
     <script src="game5.js"></script>
-    <script src="hw-7.js"></script>     
-    <script src="hw-8.js"></script> 
+    <script src="game6.js"></script>
+    <script src="animation.js"></script>    
 </body>
 </html>

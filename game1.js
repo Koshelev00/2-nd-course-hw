@@ -1,4 +1,4 @@
-function play() {
+function game1() {
   
     let randomNumber = Math.floor(Math.random() * 100) + 1;
     let userAnswer;
