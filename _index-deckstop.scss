@@ -1,6 +1,10 @@
 $color-black:  rgb(32, 32, 39);
 $color-white: rgb(255, 255, 255);
 
+html {
+    scroll-behavior: smooth;
+}
+
 .top {
     position: relative;
     background-image: url(img/background_top.png);

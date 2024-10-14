@@ -12,6 +12,10 @@ body {
   padding-right: calc(50% - 600px);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .top {
   position: relative;
   background-image: url(img/background_top.png);

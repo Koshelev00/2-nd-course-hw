@@ -7,5 +7,5 @@ const getRandomColor = () => {
     }
     return color;
 }
-alert(`Я сгенерировал случайный код цвета: ${getRandomColor()}`);
+document.querySelector('.mini-games').style.background = getRandomColor();
 }
