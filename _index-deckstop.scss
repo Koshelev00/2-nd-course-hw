@@ -1,6 +1,10 @@
 $color-black:  rgb(32, 32, 39);
 $color-white: rgb(255, 255, 255);
 
+html {
+    scroll-behavior: smooth;
+}
+
 .top {
     position: relative;
     background-image: url(img/background_top.png);
@@ -49,9 +53,24 @@ $color-white: rgb(255, 255, 255);
     font-family: inherit;
     margin-bottom: 154px;
 }
+.drive-btn-mobile {
+    width: 247px;
+    height: 66px;
+    box-sizing: border-box;
+    border-radius: 60px;
+    background: $color-black;
+    color: $color-white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    text-align: center;
+    font-family: inherit;
+    margin-bottom: 154px;
+    display:none;
+}
+   
 
 .animation {
-    // position: absolute;
     bottom: 0;
     height: 90px;
     left: -1%;
