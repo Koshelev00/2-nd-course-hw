@@ -12,6 +12,10 @@ body {
   padding-right: calc(50% - 600px);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .top {
   position: relative;
   background-image: url(img/background_top.png);
@@ -57,6 +61,22 @@ body {
   text-align: center;
   font-family: inherit;
   margin-bottom: 154px;
+}
+
+.drive-btn-mobile {
+  width: 247px;
+  height: 66px;
+  box-sizing: border-box;
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  text-align: center;
+  font-family: inherit;
+  margin-bottom: 154px;
+  display: none;
 }
 
 .animation {
@@ -362,6 +382,10 @@ body {
     line-height: 141.69%;
     text-align: center;
     margin-bottom: 131px;
+    display: none;
+  }
+  .drive-btn-mobile {
+    display: block;
   }
   .animation {
     height: 52px;
